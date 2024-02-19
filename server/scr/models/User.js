@@ -7,20 +7,12 @@ module.exports = (sequelize) => {
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4,
     },
-    forename: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-    },
-    surname: {
-      type: DataTypes.STRING(100),
-      allowNull: false
-    },
     email: {
       type: DataTypes.STRING(100),
       allowNull: false,
       unique: true
     },
-    nick: {
+    username: {
       type: DataTypes.STRING(100),
       allowNull: false,
       unique: true
@@ -28,6 +20,10 @@ module.exports = (sequelize) => {
     password: {
       type: DataTypes.STRING(100),
       allowNull: false,
+    },
+    nationality: {
+      type: DataTypes.STRING(100),
+      allowNull: false
     }
   })
 }

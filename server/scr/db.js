@@ -3,21 +3,29 @@ const { Sequelize } = require('sequelize');
 
 const fs = require('fs');
 const path = require('path');
-const { USER, PASS, DATABASE, PORT_DB, URL_DB } = process.env;
+const { USER, PASS, DATABASE, PORT_DB, URL_DB, DB_LOCAL_USER, DB_LOCAL_PASSWORD, DB_LOCAL_HOST, } = process.env;
 
-const sequelize = new Sequelize(DATABASE, USER, PASS, {
-  host: URL_DB,
-  port: PORT_DB,
-  dialect: 'postgres',
-  logging: false,
-  native: false,
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false,
-    }
-  }
-})
+//aws db
+// const sequelize = new Sequelize(DATABASE, USER, PASS, {
+//   host: URL_DB,
+//   port: PORT_DB,
+//   dialect: 'postgres',
+//   logging: false,
+//   native: false,
+//   dialectOptions: {
+//     ssl: {
+//       require: true,
+//       rejectUnauthorized: false,
+//     }
+//   }
+// })
+
+// local db
+const sequelize = new Sequelize(`postgres://${DB_LOCAL_USER}:${DB_LOCAL_PASSWORD}@${DB_LOCAL_HOST}/redsabor`, {
+  logging: false, 
+  native: false, 
+});
+
 const basename = path.basename(__filename);
 
 const modelDefiners = [];
