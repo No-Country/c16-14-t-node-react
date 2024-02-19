@@ -1,1 +1,2 @@
-Actualmente vamos a trabajar con 2 ramas adicionales. _back_end_ y _front_end_
+A través de nuestra investigación de UX descubrimos que hay un nicho no explotado: una plataforma que garantice la calidad de las recetas de cocina y que contenga recetas de toda Latinoamérica con terminología comprensible ("regionalizada") para que cualquier usuario de cualquier parte de la región pueda cocinar sin problemas.
+La plataforma "redsabor" es nuestra propuesta de una red social enfocada en la gastronomía latinoamericana, aprovechando el poder de las redes sociales tanto para que los mismos usuarios compartan sus recetas con la comunidad como para hacer una curaduría a través de la selección de las recetas más populares y filtros de búsqueda que faciliten encontrarlas.
