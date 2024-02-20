@@ -1,22 +1,23 @@
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import AuthenticationBody from './AuthenticationBody';
+import { NavLink } from 'react-router-dom'
 
-function Register(){
+function Register() {
 
     return (
         <>
-            <AuthenticationBody/>
-            
+            <AuthenticationBody />
+
             <div>
-                <a href="">
+                <NavLink to="/login">
                     <AiOutlineArrowLeft />
                     <h2>Regresar</h2>
-
-                </a>
+                </NavLink>
+                
 
                 <form action="" method="">
-                    <input type="email" placeholder="Ingresa tu correo" required/>
-                    <input type="text" placeholder="Crea tu nombre de usuario" required/>
+                    <input type="email" placeholder="Ingresa tu correo" required />
+                    <input type="text" placeholder="Crea tu nombre de usuario" required />
                     <select>
                         <option value="">Dinos de dónde eres</option>
                         <option value="volvo">Volvo</option>
@@ -24,8 +25,8 @@ function Register(){
                         <option value="mercedes">Mercedes</option>
                         <option value="audi">Audi</option>
                     </select>
-                    <input type="password" placeholder="Contraseña" required/>
-                    <input type="password" placeholder="Confirmar contraseña" required/>
+                    <input type="password" placeholder="Contraseña" required />
+                    <input type="password" placeholder="Confirmar contraseña" required />
 
                     <button>Crea tu cuenta</button>
                 </form>
