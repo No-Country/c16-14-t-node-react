@@ -18,8 +18,10 @@ const signInHandler = async (req, res) => {
   try {
     const login = await loginUser(email, password);
     
-    if(login) {
-      res.status(200).json({message: 'Login success'})
+    if(login[0]) {
+      const user = login[1]
+      const token = login[2]
+      res.status(200).json({data: user, tokenSession: token})
     } else {
       res.status(401).json({ message: 'Invalid credentials'})
     }
