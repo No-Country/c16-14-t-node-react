@@ -1,17 +1,17 @@
-import { AiOutlineArrowLeft } from 'react-icons/ai';
-import AuthenticationBody from './AuthenticationBody';
+// import { AiOutlineArrowLeft } from 'react-icons/ai';
+// import AuthenticationBody from './AuthenticationBody';
 import { NavLink } from 'react-router-dom'
 
 function Register() {
-
+    
     return (
         <>
-            <AuthenticationBody />
+            {/* <AuthenticationBody /> */}
 
             <div>
                 <NavLink to="/login">
-                    <AiOutlineArrowLeft />
-                    <h2>Regresar</h2>
+                    {/* <AiOutlineArrowLeft />  */}
+                    <h2>⬅️ Regresar</h2>
                 </NavLink>
                 
 
@@ -20,10 +20,16 @@ function Register() {
                     <input type="text" placeholder="Crea tu nombre de usuario" required />
                     <select>
                         <option value="">Dinos de dónde eres</option>
-                        <option value="volvo">Volvo</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="venezuela">Venezuela</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="peru">Perú</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="uruguay">Uruguay</option>
                     </select>
                     <input type="password" placeholder="Contraseña" required />
                     <input type="password" placeholder="Confirmar contraseña" required />
@@ -31,7 +37,7 @@ function Register() {
                     <button>Crea tu cuenta</button>
                 </form>
 
-                <p>o tambien  puedes conectarte con</p>
+                {/* <p>o tambien  puedes conectarte con</p>
                 <div>
                     <a href="">Facebook
                         <img src="" alt="" />
@@ -42,7 +48,7 @@ function Register() {
                     <a href="">Google
                         <img src="" alt="" />
                     </a>
-                </div>
+                </div> */}
 
             </div>
         </>
