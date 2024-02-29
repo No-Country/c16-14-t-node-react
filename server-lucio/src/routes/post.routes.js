@@ -10,4 +10,5 @@ router.get('/posts/:id', getPost)
 
 router.get('/posts/:id/steps', getPostSteps)
 router.get('/posts/:id/coments', getPostComents)
+
 export default router

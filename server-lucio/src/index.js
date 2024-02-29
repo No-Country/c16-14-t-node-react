@@ -1,10 +1,10 @@
 import app from './app.js'
 import { sequelize } from './database/database.js'
 
-// import './models/Post.js'
-// import './models/Step.js'
-// import './models/Coment.js'
-
+import './models/Post.js'
+import './models/Step.js'
+import './models/Coment.js'
+import './models/User.js'
 async function main(){
     try{
         // await sequelize.sync({force: true})
