@@ -3,6 +3,6 @@ const userRouter = Router();
 const { signUpHandler, signInHandler } = require('../handlers/userHandlers.js');
 
 userRouter.use('/sign-up', signUpHandler);
-userRouter.use('/sign-in', signInHandler);
+userRouter.use('/auth', signInHandler);
 
 module.exports = userRouter;

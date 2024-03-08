@@ -2,9 +2,9 @@ const { User } = require('../db.js');
 const { encrypt, compare } = require('../helpers/bcryptHandler.js');
 const { tokenSign } = require('../helpers/tokenHandler.js')
 
-const createUser = async ( email, username, password, nationality) => {
+const createUser = async ( email, username, nationality, password) => {
   const hashPassword = await encrypt(password)
-  const user = await User.create({ email, username, password: hashPassword, nationality });
+  const user = await User.create({ email, username, nationality, password: hashPassword });
   return user;
 }
 

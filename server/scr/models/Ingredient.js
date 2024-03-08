@@ -1,34 +1,23 @@
 const { DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
-  sequelize.define('User', {
+  sequelize.define('Ingredient', {
     id: {
       type: DataTypes.UUID,
       primaryKey: true,
       defaultValue: DataTypes.UUIDV4,
     },
-    email: {
+    name: {
       type: DataTypes.STRING(100),
       allowNull: false,
-      unique: true
     },
-    username: {
+    amount: {
       type: DataTypes.STRING(100),
       allowNull: false,
-      unique: true
     },
-    nationality: {
+    unit: {
       type: DataTypes.STRING(100),
       allowNull: false
     },
-    password: {
-      type: DataTypes.STRING(100),
-      allowNull: false,
-    },
-    role: {
-      type: DataTypes.STRING(10),
-      allowNull: false,
-      defaultValue: 'user'
-    }
   })
 }

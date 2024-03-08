@@ -1,6 +1,6 @@
 import Sequelize from 'sequelize'
 
-export const sequelize = new Sequelize('RedSabor', 'postgres', 'password00', {
+export const sequelize = new Sequelize('RedSabor-local', 'postgres', 'root', {
     host: 'localhost',
     dialect: 'postgres'
 })

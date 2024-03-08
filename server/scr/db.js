@@ -43,7 +43,16 @@ let entries = Object.entries(sequelize.models);
 let capsEntries = entries.map((entry) => [entry[0][0].toUpperCase() + entry[0].slice(1), entry[1]]);
 sequelize.models = Object.fromEntries(capsEntries);
 
-const { User } = sequelize.models;
+const { User, Recipe, Ingredient, Step } = sequelize.models;
+
+User.hasMany(Recipe);
+Recipe.belongsTo(User);
+
+Recipe.belongsToMany(Ingredient, { through: 'recipeingredient'});
+Ingredient.belongsToMany(Recipe, { through: 'recipeingredient'});
+
+Recipe.hasMany(Step);
+Step.belongsTo(Recipe);
 
 module.exports = {
   ...sequelize.models,
