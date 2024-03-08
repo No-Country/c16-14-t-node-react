@@ -1,0 +1,29 @@
+
+.searchBar::placeholder {
+  color: #999; /* Placeholder text color */
+}
+
+/* Optional: Styling for input on focus */
+.searchBar:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: #007bff; /* Border color on focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Box shadow on focus */
+}
+
+.searchContainer {
+  width: 500px;
+  height: 40px;
+  background-color: #ccc;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+.searchContainer > input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: #ccc;
+  padding-left: 5px;
+}

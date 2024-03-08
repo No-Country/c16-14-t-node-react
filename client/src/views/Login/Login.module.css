@@ -1,0 +1,61 @@
+
+.container {
+  width: 80%;
+}
+
+.formContainer {
+  max-width: 400px; /* Adjust as needed */
+  margin: 0 auto; /* Center the form horizontally */
+  margin-top: 1.5rem;
+}
+
+.formContainer input[type="text"],
+.formContainer input[type="password"],
+.formContainer select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid #FF6347; /* Border color */
+  border-radius: 20px;
+  box-sizing: content-box; /* Ensure padding and border are included in the width */
+}
+
+.formContainer select {
+  appearance: none; /* Remove default select styles */
+  background: transparent; /* Transparent background */
+}
+
+.formContainer button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background-color: #FF6347; /* Background color for the button */
+  color: #fff; /* Text color for the button */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  box-sizing: content-box;
+}
+
+.formContainer button:hover {
+  background-color: #ff4321; /* Darker background color on hover */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+.errmsg {
+  background-color: lightpink;
+  color: firebrick;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}

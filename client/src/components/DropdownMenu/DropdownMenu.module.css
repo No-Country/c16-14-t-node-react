@@ -1,0 +1,9 @@
+.dropdown {
+  position: absolute;
+  background-color: aqua;
+  right: 1.5rem;
+  border-radius: 15px;
+  color: #FF6347;
+  border: 1px solid #FF6347;
+  padding: 15px;
+}
